@@ -14,9 +14,9 @@
 inventory:
     plugin: SimpleInventory
     options:
-        host_file: "hosts.yaml"
-        group_file: ""
-        defaults_file: ""
+        host_file: "/home/ibi/Documents/Git/Nornir/Blueprints/hosts.yaml"
+        group_file: "/home/ibi/Documents/Git/Nornir/Blueprints/groups.yaml"
+        defaults_file: "/home/ibi/Documents/Git/Nornir/Blueprints/defaults.yaml"
 runner:
     plugin: threaded
     options:
