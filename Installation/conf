@@ -1,0 +1,16 @@
+[ VRF ]
+
+configure terminal
+ip domain-name mydomnain.com
+username user1 privilege 15 password cisco
+ip ssh version 2
+crypto key gen rsa mod 1024
+line vty 0 4
+! transport in all
+! login local
+vrf definition MGMT
+! address-family ipv4
+int gig0/0
+! vrf forwarding MGMT
+! ip address 192.168.0.23 255.255.255.0
+! no shut

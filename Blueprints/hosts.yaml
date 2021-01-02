@@ -1,0 +1,8 @@
+---
+IOS_XE:
+  hostname: ios-xe-mgmt-latest.cisco.com
+  platform: ios
+  username: developer
+  password: C1sco12345
+  groups:
+  - cisco_group
