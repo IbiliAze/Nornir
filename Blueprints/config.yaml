@@ -1,15 +1,3 @@
-# ---
-# core:
-#   num_workers: 10
-
-# inventory:
-#   plugin: nornir.plugins.inventory.simple.SimpleInventory
-#   options:
-#     hosts_file: ""
-#     group_file: ""
-#     defaults_file: ""
-
-    
 ---
 inventory:
     plugin: SimpleInventory
@@ -20,4 +8,4 @@ inventory:
 runner:
     plugin: threaded
     options:
-        num_workers: 100
+        num_workers: 10

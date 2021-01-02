@@ -1,0 +1,71 @@
+2021-01-02 03:53:20,523 -  nornir.core -     INFO -        run() - Running task 'show_command' with args {} on 1 hosts
+2021-01-02 03:53:20,523 - nornir.core.task -    ERROR -      start() - Host 'IOS_XE': task 'show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "./test.py", line 9, in show_command
+    showVer = task.run(netmiko_send_commands, command_string="show ver")
+NameError: name 'netmiko_send_commands' is not defined
+
+2021-01-02 04:02:03,035 -  nornir.core -     INFO -        run() - Running task 'show_command' with args {} on 1 hosts
+2021-01-02 04:02:03,036 - nornir.core.task -    ERROR -      start() - Host 'IOS_XE': task 'show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "./test.py", line 16, in show_command
+    showVer = task.run(netmiko_send_commands, command_string="show ver")
+NameError: name 'netmiko_send_commands' is not defined
+
+2021-01-02 04:04:05,420 -  nornir.core -     INFO -        run() - Running task 'show_command' with args {} on 1 hosts
+2021-01-02 04:04:05,420 - nornir.core.task -    ERROR -      start() - Host 'IOS_XE': task 'show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "./test.py", line 17, in show_command
+    showVer = task.run(netmiko_send_commands, command_string="show ver")
+NameError: name 'netmiko_send_commands' is not defined
+
+2021-01-02 04:05:09,322 -  nornir.core -     INFO -        run() - Running task 'show_command' with args {} on 1 hosts
+2021-01-02 04:05:09,323 - nornir.core.task -    ERROR -      start() - Host 'IOS_XE': task 'show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "./test.py", line 17, in show_command
+    showVer = task.run(netmiko_send_commands, command_string="show ver")
+NameError: name 'netmiko_send_commands' is not defined
+
+2021-01-02 04:05:29,913 -  nornir.core -     INFO -        run() - Running task 'show_command' with args {} on 1 hosts
+2021-01-02 04:05:29,914 - nornir.core.task -    ERROR -      start() - Host 'IOS_XE': task 'show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "./test.py", line 17, in show_command
+    showVer = task.run(netmiko_send_commands, command_string="show ver")
+NameError: name 'netmiko_send_commands' is not defined
+
+2021-01-02 04:06:12,324 -  nornir.core -     INFO -        run() - Running task 'show_command' with args {} on 1 hosts
+2021-01-02 04:06:12,325 - nornir.core.task -    ERROR -      start() - Host 'IOS_XE': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 439, in get_connection
+    conn = self.get_connection_parameters(connection)
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 373, in get_connection_parameters
+    r = self._get_connection_options_recursively(connection)
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 402, in _get_connection_options_recursively
+    sp = g._get_connection_options_recursively(connection)
+AttributeError: 'str' object has no attribute '_get_connection_options_recursively'
+
+2021-01-02 04:06:12,325 - nornir.core.task -    ERROR -      start() - Host 'IOS_XE': task 'show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "./test.py", line 17, in show_command
+    showVer = task.run(netmiko_send_command, command_string="show ver")
+  File "/home/ibi/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+

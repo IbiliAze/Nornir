@@ -1,1 +1,6 @@
 nornir
+nornir_utils
+nornir_napalm
+nornir_netmiko
+nornir_jinja2
+nornir_scrapli
